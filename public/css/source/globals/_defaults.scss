@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+}
+
+body {
+	font-family: $helvetica;
+	color: $text;
+	background-color: $bg-color;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  color: $link;
+
+  text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	&:hover {
+    color: $hover;
+		
+		// Transition applied only on mousein
+    -webkit-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+	}
+}
+
+
+
+

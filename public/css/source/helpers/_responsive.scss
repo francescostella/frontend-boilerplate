@@ -1,0 +1,31 @@
+@mixin respond-to($width) {
+  @media only screen and (min-width: $width) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin respond-small {
+  @media only screen and (max-width: 40em) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin respond-medium {
+  @media only screen and (min-width: $minMedium) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin respond-large {
+  @media only screen and (min-width: $minLarge) {
+    & {
+      @content;
+    }
+  }
+}
